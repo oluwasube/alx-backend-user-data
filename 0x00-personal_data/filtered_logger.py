@@ -13,7 +13,7 @@ def filter_datum(fields: List[str], redaction: str,
     Returns the log message with certain fields obfuscated.
 
     :param fields: a list of strings representing all fields to obfuscate
-    :param redaction: representing by what the field will be obfuscated
+    :param redaction: representing what the field will obfuscate
     :param message: a string representing the log line
     :param separator:representing which character is separating
     all fields in the log line (message)
