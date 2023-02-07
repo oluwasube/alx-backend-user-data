@@ -4,7 +4,7 @@ Definition of class BasicAuth
 """
 import base64
 from .auth import Auth
-from typing import TypeVar, Tuple 
+from typing import TypeVar
 
 from models.user import User
 
@@ -46,7 +46,7 @@ class BasicAuth(Auth):
 
     def extract_user_credentials(self,
                                  decoded_base64_authorization_header:
-                                 str) -> Tuple[str, str]:
+                                 str) -> (str, str):
         """
         Returns user email and password from Base64 decoded value
         """
